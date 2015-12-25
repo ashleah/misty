@@ -1,0 +1,343 @@
+/*
+  Theme Name: Mistyteahouse Theme
+  Theme URI: http://www.mistyteahouse.com
+  Author: Patrick Edqvist
+  Author URI: https://capstan-kom.se/
+  Description: A excellent bloggers theme for a ambitious gamer. Child theme of Twenty Sixteen
+  Version: 1.0.0
+  template: twentysixteen
+
+----------------------------------------——
+
+ # Table of Contents
+
+   1. Typography
+   2. Colors
+   3. Layout
+   4. Header
+     - 4.1 Navigation
+   5. Content
+     - 5.1 Articles
+     - 5.2 Comments
+     - 5.3 Pages
+   6. Footer
+   7. Utilities
+   8. Other
+
+  This theme uses the foundation framework.
+  For documentation please go to http://foundation.zurb.com/sites/docs
+
+----------------------------------------*/
+
+/*----------------------------------------
+ # 1. Typography
+----------------------------------------*/
+
+body {
+  font-family: Merriweather, Georgia, serif;
+}
+
+a {
+  transition: color .2s ease-in-out;
+  color: #009144;
+}
+
+/*----------------------------------------
+ # 2. Colors
+----------------------------------------*/
+
+/*
+  Name (Description): Hex, rgb(0, 0, 0)
+  Primary (Green): #009144, rgb(0, 145, 68)
+  Secondary (Black): #212121, rgb(33, 33, 33)
+*/
+
+/*----------------------------------------
+ # 3. Layout
+----------------------------------------*/
+
+body:not(.custom-background-image):before,
+body:not(.custom-background-image):after {
+  display: none;
+}
+
+.site {
+  margin: 0;
+  background: transparent;
+}
+
+
+.site-inner {
+  max-width: 100%;
+}
+
+.site-content {
+  max-width: 1115px;
+  margin: 0 auto;
+  padding-top: 48px;
+  background: #fff;
+}
+
+@media screen and (min-width: 56.875em) {
+  .site-content {
+    margin-top: -50px;
+  }
+}
+
+.off-canvas-content {
+  background: transparent;
+}
+
+/*----------------------------------------
+ # 4. Header
+----------------------------------------*/
+#masthead {
+  background-size: cover;
+}
+
+
+.site-branding {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (min-width: 56.875em) {
+  .site-branding {
+    text-align: center;
+  }
+}
+
+.site-branding .site-title a {
+  color: #fff;
+font-family: 'Niconne', cursive;
+  font-size: 56px;
+}
+
+.site-branding .site-title a:hover, .site-branding .site-title a:focus {
+  color: #009144;
+}
+
+.site-branding .site-description {
+  color: rgba(255, 255, 255, .70);
+}
+
+/* 4.1 Navigation */
+
+@media screen and (min-width: 56.875em) {
+  .flexbox .site-header-menu {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.main-navigation a {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.main-navigation li:hover > a, .main-navigation li.focus > a {
+  color: #009144;
+}
+
+/* Dropdown */
+
+.main-navigation .menu-item-has-children > a:after {
+  top: .6125em;
+}
+
+.main-navigation ul ul:before {
+  border-color: #212121 transparent;
+}
+
+.main-navigation ul ul:after {
+  border-color: #212121 transparent;
+}
+
+.main-navigation ul ul {
+  border-bottom: 0 none;
+}
+
+.main-navigation ul ul li {
+  border: 0 none;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+  background-color: #212121;
+}
+
+/* Mobile menu */
+
+.site-header-menu.toggled-on, .no-js .site-header-menu {
+  display: none;
+}
+
+#off-canvas-toggle {
+  display: none;
+  margin: 0;
+  padding: 12px 16px;
+  color: #fff;
+  border: 0 none;
+  border-radius: 3px;
+  background: #009144;
+}
+
+@media screen and (max-width: 56.875em) {
+  #off-canvas-toggle {
+    display: block;
+  }
+}
+
+.off-canvas {
+  padding: 24px 8px;
+  background: #212121;
+}
+
+.off-canvas ul {
+  margin: 0;
+  list-style: none;
+}
+
+.off-canvas ul li {
+  margin-bottom: 6px;
+}
+
+.off-canvas ul li a {
+  font-family: Montserrat, 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.off-canvas .current-menu-item a {
+  font-weight: 700;
+  color: #fff;
+}
+
+.off-canvas .sub-menu {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  margin-left: 24px;
+}
+
+/*----------------------------------------
+ # 5. Content
+----------------------------------------*/
+
+/* 5.1 Articles */
+
+.entry-title a:hover, .entry-title a:focus {
+  color: #009144;
+}
+
+.entry-footer a:hover, .entry-footer a:focus {
+  color: #009144;
+}
+
+/* 5.2 Comments */
+
+/* 5.3 Pages */
+
+/*----------------------------------------
+ # 6. Footer
+----------------------------------------*/
+
+.site-footer {
+  background-color: #212121;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.content-bottom-widgets {
+  width: 100%;
+}
+
+.widget .widget-title {
+  color: #fff;
+}
+
+.content-bottom-widgets .widget_archive ul {
+  column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -mz-column-count:3;
+  column-gap: 40px;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  -mz-column-gap: 40px;
+  margin-left: 0;
+}
+
+/*----------------------------------------
+ # 7. Utilities
+----------------------------------------*/
+
+img.responsive-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*----------------------------------------
+ # 8. Other
+----------------------------------------*/
+
+.widget input[type='search'].search-field {
+  box-sizing: border-box;
+}
+
+/* Follow button widget */
+
+.follow {
+  position: relative;
+  display: block;
+  margin-bottom: 4px;
+  padding: 12px 12px 12px 52px;
+  transition: background .2s ease-in-out;
+  color: #fff;
+  border-radius: 2px;
+  background: #444;
+}
+
+.follow .follow-name {
+  font-family: Montserrat, 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+
+.follow:hover .follow-name, .follow:focus .follow-name,
+.follow:active .follow-name {
+  color: #fff;
+}
+
+.follow .follow-icon {
+  position: absolute;
+  top: 0;
+  left: 8px;
+}
+
+/* Twitch */
+
+.follow.twitch {
+  background: rgb(100, 65, 165);
+}
+
+.follow.twitch:hover, .follow.twitch:focus, .follow.twitch:active {
+  background: rgb(185, 163, 227);
+}
+
+.follow.twitch .follow-icon {
+  top: 6px;
+}
+
+/* Youtube */
+
+.follow.youtube {
+  background: rgb(229, 45, 39);
+}
+
+.follow.youtube:hover, .follow.youtube:focus, .follow.youtube:active {
+  background: rgb(179, 18, 23);
+}
+
+.follow.youtube .follow-icon {
+  top: 9px;
+}

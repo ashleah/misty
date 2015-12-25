@@ -1,0 +1,29 @@
+<?php function misty_customize_register($wp_customize) {
+
+  $wp_customize->add_section( 'misty_options', array(
+    'title' => __( 'Misty Options' ),
+    'description' => __( '' ),
+    'priority' => 160,
+  ) );
+
+  $wp_customize->add_setting( 'twitch_profile');
+  $wp_customize->add_control( 'twitch_profile', array(
+    'type' => 'text',
+    'priority' => 10, // Within the section.
+    'section' => 'misty_options', // Required, core or custom.
+    'label' => __( 'Twitch Profile' ),
+    'description' => __( 'Add your twitch profile to show the stream and follow button for your readers.' ),
+  ) );
+
+  $wp_customize->add_setting( 'youtube_profile');
+  $wp_customize->add_control( 'youtube_profile', array(
+    'type' => 'text',
+    'priority' => 20, // Within the section.
+    'section' => 'misty_options', // Required, core or custom.
+    'label' => __( 'YouTube Profile' ),
+    'description' => __( 'Add your youtube profile to show the follow button for your readers.' ),
+  ) );
+
+
+
+} add_action('customize_register', 'misty_customize_register'); ?>
