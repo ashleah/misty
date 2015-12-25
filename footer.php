@@ -13,9 +13,7 @@
 		</div><!-- .site-content -->
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
-	<?php get_sidebar( 'content-bottom' ); ?>
-			
-
+			<?php get_sidebar( 'content-bottom' ); ?>
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->
 </div><!-- .site -->

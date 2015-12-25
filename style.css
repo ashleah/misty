@@ -63,6 +63,7 @@ body:not(.custom-background-image):after {
 
 .site {
   margin: 0;
+
   background: transparent;
 }
 
@@ -75,6 +76,7 @@ body:not(.custom-background-image):after {
   max-width: 1115px;
   margin: 0 auto;
   padding-top: 48px;
+
   background: #fff;
 }
 
@@ -98,7 +100,9 @@ body:not(.custom-background-image):after {
 
 .site-branding {
   display: block;
+
   width: 100%;
+
   text-align: left;
 }
 
@@ -110,6 +114,7 @@ body:not(.custom-background-image):after {
 
 .site-branding .site-title a {
   color: #fff;
+
 font-family: 'Niconne', cursive;
   font-size: 56px;
 }
@@ -133,9 +138,9 @@ font-family: 'Niconne', cursive;
 }
 
 .main-navigation a {
+  color: rgba(255, 255, 255, 1);
   font-size: 14px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 1);
 }
 
 .main-navigation li:hover > a, .main-navigation li.focus > a {
@@ -209,8 +214,8 @@ font-family: 'Niconne', cursive;
 }
 
 .off-canvas .current-menu-item a {
-  font-weight: 700;
   color: #fff;
+  font-weight: 700;
 }
 
 .off-canvas .sub-menu {
@@ -242,9 +247,9 @@ font-family: 'Niconne', cursive;
 ----------------------------------------*/
 
 .site-footer {
-  background-color: #212121;
-  padding-left: 6%;
   padding-right: 6%;
+  padding-left: 6%;
+  background-color: #212121;
 }
 
 .content-bottom-widgets {
@@ -256,6 +261,7 @@ font-family: 'Niconne', cursive;
 }
 
 .content-bottom-widgets .widget_archive ul {
+  margin-left: 0;
   column-count: 3;
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -264,7 +270,6 @@ font-family: 'Niconne', cursive;
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   -mz-column-gap: 40px;
-  margin-left: 0;
 }
 
 /*----------------------------------------
@@ -289,10 +294,14 @@ img.responsive-img {
 
 .follow {
   position: relative;
+
   display: block;
+
   margin-bottom: 4px;
   padding: 12px 12px 12px 52px;
+
   transition: background .2s ease-in-out;
+
   color: #fff;
   border-radius: 2px;
   background: #444;
