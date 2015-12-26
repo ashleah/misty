@@ -34,7 +34,7 @@
 ----------------------------------------*/
 
 body {
-  font-family: Merriweather, Georgia, serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;;
 }
 
 a {
@@ -98,8 +98,12 @@ body:not(.custom-background-image):after {
     margin-left: 75%;
     padding: 35px 35px;
     width: 25%;
-    background-color: #282828;
   }
+}
+
+.sidebar {
+  color: #fff;
+  background-color: #282828;
 }
 
 .off-canvas-content {
@@ -128,7 +132,7 @@ body:not(.custom-background-image):after {
 
 .site-branding .site-title a {
   color: #C8E6C9;
-  font-family: 'Niconne', cursive;
+  font-family: 'Kaushan Script', cursive;
   font-size: 56px;
 }
 
@@ -138,6 +142,7 @@ body:not(.custom-background-image):after {
 
 .site-branding .site-description {
   color: #C8E6C9;
+  font-family: Montserrat, "Helvetica Neue", sans-serif;;
 }
 
 /* 4.1 Navigation */
@@ -254,6 +259,9 @@ body:not(.custom-background-image):after {
 ----------------------------------------*/
 
 /* 5.1 Articles */
+.entry-title {
+  font-family: "Kaushan Script", "Times New Roman", sans-serif;
+}
 
 .entry-title a:hover, .entry-title a:focus {
   color: #009144;
@@ -261,6 +269,11 @@ body:not(.custom-background-image):after {
 
 .entry-footer a:hover, .entry-footer a:focus {
   color: #009144;
+}
+
+.entry-content {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 /* 5.2 Comments */
@@ -283,6 +296,7 @@ body:not(.custom-background-image):after {
 
 .widget .widget-title {
   color: #fff;
+  font-family: "Kaushan Script"
 }
 
 .content-bottom-widgets .widget_archive ul {

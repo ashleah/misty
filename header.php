@@ -19,8 +19,8 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
-	<link href='https://fonts.googleapis.com/css?family=Lobster|Kaushan+Script|Damion|Playball|Great+Vibes|Niconne' rel='stylesheet' type='text/css'>
-  <?php if ( get_header_image() ) : ?>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Kaushan+Script' rel='stylesheet' type='text/css'>
+	<?php if ( get_header_image() ) : ?>
     <style type="text/css">
       #masthead {
         background-image: url('<?php header_image(); ?>');
