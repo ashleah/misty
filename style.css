@@ -75,7 +75,30 @@ body:not(.custom-background-image):after {
   max-width: 1115px;
   margin: 0 auto;
   padding: 0;
-  background: #fff;
+  background: transparent;
+}
+
+@media screen and (min-width: 56.875em){
+  .content-area {
+      float: left;
+      margin-right: -100%;
+      width: 75%;
+      padding: 35px 35px;
+  }
+}
+
+.content-area {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 56.875em){
+  .sidebar {
+      float: left;
+      margin-left: 75%;
+      padding: 35px 35px;
+      width: 25%;
+      background-color: #212121;
+}
 }
 
 
