@@ -89,7 +89,7 @@ body:not(.custom-background-image):after {
 
 .content-area {
   background-color: #fff;
-  border: 10px solid #BABABA;
+  border: 10px solid #EEEEEE;
 }
 
 @media screen and (min-width: 56.875em){
@@ -127,7 +127,7 @@ body:not(.custom-background-image):after {
 }
 
 .site-branding .site-title a {
-  color: #fff;
+  color: #C8E6C9;
   font-family: 'Niconne', cursive;
   font-size: 56px;
 }
@@ -137,7 +137,7 @@ body:not(.custom-background-image):after {
 }
 
 .site-branding .site-description {
-  color: rgba(255, 255, 255, .70);
+  color: #C8E6C9;
 }
 
 /* 4.1 Navigation */
@@ -158,12 +158,13 @@ body:not(.custom-background-image):after {
 }
 
 .main-navigation a {
-  color: rgba(255, 255, 255, 1);
+  color: #C8E6C9;
   font-size: 14px;
   font-weight: 400;
 }
 
-.main-navigation li:hover > a, .main-navigation li.focus > a {
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
   color: #009144;
 }
 
