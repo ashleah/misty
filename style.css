@@ -40,8 +40,50 @@ body {
 a {
   transition: color .2s ease-in-out;
   color: #009144;
+  box-shadow: none;
 }
 
+.entry-content a,
+.entry-summary a,
+.taxonomy-description a, .logged-in-as a, .comment-content a, .pingback .comment-body > a, .textwidget a, .entry-footer a:hover, .site-info a:hover {
+  box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.table-of-content{
+  border-left: 4px solid #616161;
+  padding-left: 15px;
+}
+
+.table-of-content ul {
+  list-style: none;
+}
+
+.table-of-content ul li {
+  padding-bottom: 10px;
+}
+
+.table-of-content ul li a {
+  box-shadow: none;
+}
+
+.table-of-content h2,
+.table-of-content h3 {
+  color: #616161;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-position: inside;
+}
 /*----------------------------------------
  # 2. Colors
 ----------------------------------------*/
@@ -276,6 +318,37 @@ body:not(.custom-background-image):after {
   font-weight: normal;
 }
 
+.entry-content p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.entry-content h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.small-article {
+  min-height: 350px;
+}
+
+.small-article .entry-title {
+  font-size: 24px;
+}
+
+.small-article .wp-post-image {
+  border: 5px solid #EEEEEE;
+}
+
+.small-article.column:last-child:not(:first-child), .small-article.columns:last-child:not(:first-child) {
+    float: left;
+}
+
+body:not(.search-results) article.small-article .entry-content {
+    float: none;
+    width: 100%;
+}
+
 /* 5.2 Comments */
 
 /* 5.3 Pages */
@@ -365,11 +438,11 @@ img.responsive-img {
 /* Twitch */
 
 .follow.twitch {
-  background: rgb(100, 65, 165);
+  background: transparent;
 }
 
 .follow.twitch:hover, .follow.twitch:focus, .follow.twitch:active {
-  background: rgb(185, 163, 227);
+  background: #BDBDBD;
 }
 
 .follow.twitch .follow-icon {
@@ -379,11 +452,11 @@ img.responsive-img {
 /* Youtube */
 
 .follow.youtube {
-  background: rgb(229, 45, 39);
+  background: transparent;
 }
 
 .follow.youtube:hover, .follow.youtube:focus, .follow.youtube:active {
-  background: rgb(179, 18, 23);
+  background: #BDBDBD;
 }
 
 .follow.youtube .follow-icon {
