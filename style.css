@@ -74,9 +74,31 @@ body:not(.custom-background-image):after {
 .site-content {
   max-width: 1115px;
   margin: 0 auto;
-  padding-top: 48px;
+  padding: 0;
+  background: transparent;
+}
 
-  background: #fff;
+@media screen and (min-width: 56.875em){
+  .content-area {
+    float: left;
+    margin-right: -100%;
+    width: 75%;
+    padding: 35px 35px;
+  }
+}
+
+.content-area {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 56.875em){
+  .sidebar {
+    float: left;
+    margin-left: 75%;
+    padding: 35px 35px;
+    width: 25%;
+    background-color: #212121;
+  }
 }
 
 .off-canvas-content {
@@ -105,8 +127,7 @@ body:not(.custom-background-image):after {
 
 .site-branding .site-title a {
   color: #fff;
-
-font-family: 'Niconne', cursive;
+  font-family: 'Niconne', cursive;
   font-size: 56px;
 }
 
