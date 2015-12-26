@@ -89,6 +89,7 @@ body:not(.custom-background-image):after {
 
 .content-area {
   background-color: #fff;
+  border: 10px solid #BABABA;
 }
 
 @media screen and (min-width: 56.875em){
@@ -97,7 +98,7 @@ body:not(.custom-background-image):after {
     margin-left: 75%;
     padding: 35px 35px;
     width: 25%;
-    background-color: #212121;
+    background-color: #282828;
   }
 }
 
