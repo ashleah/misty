@@ -33,7 +33,7 @@ function theme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 /*----------------------------------------
- # Remove more-link scrolling
+ # Read more
 ----------------------------------------*/
 
 function remove_more_link_scroll( $link ) {
@@ -41,6 +41,13 @@ function remove_more_link_scroll( $link ) {
 	return $link;
 }
 add_filter( 'the_content_more_link', 'remove_more_link_scroll' );
+
+//Read More Button For Excerpt
+function excerpt_read_more_link( $output ) {
+	global $post;
+	return $output . ' <a href="' . get_permalink( $post->ID ) . '" class="more-link" title="Continue reading">Continue reading</a>';
+}
+add_filter( 'the_excerpt', 'excerpt_read_more_link' );
 
 /*----------------------------------------
  # Override entry meta function
