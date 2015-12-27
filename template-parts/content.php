@@ -17,14 +17,15 @@
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	</header><!-- .entry-header -->
 
-
 	<?php twentysixteen_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
-		
-		the_excerpt();
-		// echo '<a href="' . get_the_permalink() . '" title="Continue reading the article">Continue Reading</a>';
+			/* translators: %s: Name of current post */
+			the_content( sprintf(
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
+				get_the_title()
+			) );
 
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
