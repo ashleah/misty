@@ -52,6 +52,11 @@ pre {
   overflow-y:scroll;
 }
 
+.post-navigation {
+    border-top: 2px solid #EEE;
+    border-bottom: 2px solid #EEE;
+}
+
 .entry-content a,
 .entry-summary a,
 .taxonomy-description a, .logged-in-as a, .comment-content a, .pingback .comment-body > a, .textwidget a, .entry-footer a:hover, .site-info a:hover {
@@ -401,8 +406,8 @@ body:not(.search-results) article.small-article .entry-content {
     width: 100%;
 }
 
-.post-navigation {
-  margin-top: 2px solid #EEE;
+.comment-reply-title {
+    border-top: 2px solid #eee;
 }
 
 /* 5.2 Comments */
