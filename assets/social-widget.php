@@ -48,6 +48,24 @@ class Follow_Buttons extends WP_Widget {
       echo '</a>';
     }
 
+    if ( get_theme_mod('twitter_profile') != '' ) {
+      echo '<a href="https://www.twitter.com/' . get_theme_mod('twitter_profile') . '" target="_blank" class="twitter twitter">';
+      echo '<img src="' . get_stylesheet_directory_uri() . '/img/twitter-icon.png" alt="twitter icon" class="follow-icon">';
+      echo '<span class="follow-name">';
+      echo get_theme_mod('twitter_profile');
+      echo '</span>';
+      echo '</a>';
+    }
+
+    if ( get_theme_mod('tumblr_profile') != '' ) {
+      echo '<a href="https://www.tumblr.com/c/' . get_theme_mod('tumblr_profile') . '" target="_blank" class="follow tumblr">';
+      echo '<img src="' . get_stylesheet_directory_uri() . '/img/tumblr-icon.png" alt="tumblr icon" class="follow-icon">';
+      echo '<span class="follow-name">';
+      echo get_theme_mod('tumblr_profile');
+      echo '</span>';
+      echo '</a>';
+    }
+
 		echo $args['after_widget'];
   }
 

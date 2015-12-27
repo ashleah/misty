@@ -512,3 +512,29 @@ img.responsive-img {
 .follow.youtube .follow-icon {
   top: 9px;
 }
+
+/* Twitter */
+.follow.twitter {
+  background: transparent;
+}
+
+.follow.twitter:hover, .follow.twitter:focus, .follow.twitter:active {
+  background: #BDBDBD;
+}
+
+.follow.twitter .follow-icon {
+  top: 9px;
+}
+
+/* Tumblr */
+.follow.tumblr {
+  background: transparent;
+}
+
+.follow.tumblr:hover, .follow.tumblr:focus, .follow.tumblr:active {
+  background: #BDBDBD;
+}
+
+.follow.tumblr .follow-icon {
+  top: 9px;
+}
