@@ -124,6 +124,15 @@ ul {
   font-style: italic;
   font-weight: 200;
 }
+
+.comments-title, .comment-reply-title {
+    border-top: 2px solid #EEE;
+  }
+
+  .post-navigation div + div {
+    border-top: 2px solid #EEE;
+}
+
 /*----------------------------------------
  # 2. Colors
 ----------------------------------------*/
