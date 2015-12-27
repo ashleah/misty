@@ -34,7 +34,7 @@
 ----------------------------------------*/
 
 body {
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -56,6 +56,20 @@ h4,
 h5,
 h6 {
   font-family: 'Kaushan Script', cursive;
+}
+
+.entry-content h2 {
+  font-size: 24px;
+}
+
+.entry-content h3 {
+  font-size: 20px;
+}
+
+.entry-content h4 {
+  text-transform: none;
+  letter-spacing: normal;
+  color: #757575;
 }
 
 .table-of-content{
@@ -83,6 +97,18 @@ h6 {
 
 ul {
   list-style-position: inside;
+}
+
+.widget {
+  border-top: 0;
+  margin-bottom: 2em;
+}
+
+.lead {
+  color: #757575;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 200;
 }
 /*----------------------------------------
  # 2. Colors
@@ -323,7 +349,17 @@ body:not(.custom-background-image):after {
   margin-bottom: 30px;
 }
 
+.entry-content h2 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
 .entry-content h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.entry-content h4 {
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -347,6 +383,10 @@ body:not(.custom-background-image):after {
 body:not(.search-results) article.small-article .entry-content {
     float: none;
     width: 100%;
+}
+
+.post-navigation {
+  margin-top: 2px solid #EEE;
 }
 
 /* 5.2 Comments */
@@ -375,7 +415,7 @@ body:not(.search-results) article.small-article .entry-content {
 .content-bottom-widgets .widget_archive ul {
   margin-left: 0;
   column-count: 3;
-  -webkit-column-count: 3;
+  -webkit-column-count: 5;
   -moz-column-count: 3;
   -mz-column-count:3;
   column-gap: 40px;
