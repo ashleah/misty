@@ -33,6 +33,14 @@ function theme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 /*----------------------------------------
+ # Editor Style
+----------------------------------------*/
+function add_editor_styles() {
+    add_editor_style( 'misty-editor-style.css' );
+}
+add_action( 'admin_init', 'add_editor_styles' );
+
+/*----------------------------------------
  # Read more
 ----------------------------------------*/
 
