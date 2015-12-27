@@ -138,5 +138,8 @@ function post_url_contents($url, $fields) {
 require_once( 'assets/customize.php' );
 require_once( 'assets/social-widget.php' );
 
-
+function custom_excerpt_length( $length ) {
+	return 120;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 ?>
