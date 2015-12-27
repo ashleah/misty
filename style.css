@@ -37,6 +37,10 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+img {
+  border-radius: 3px;
+}
+
 a {
   transition: color .2s ease-in-out;
   color: #009144;
