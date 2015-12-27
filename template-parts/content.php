@@ -24,7 +24,7 @@
 		<?php
 		
 		the_excerpt();
-		echo '<a href="' . get_the_permalink() . '" title="Continue reading the article">Continue Reading</a>';
+		// echo '<a href="' . get_the_permalink() . '" title="Continue reading the article">Continue Reading</a>';
 
 			wp_link_pages( array(
 				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
