@@ -170,7 +170,7 @@ body:not(.custom-background-image):after {
 }
 
 .sidebar {
-  color: #fff;
+  color: #C8E6C9;
   background-color: #1C1C1C;
 }
 
@@ -408,7 +408,7 @@ body:not(.search-results) article.small-article .entry-content {
 }
 
 .widget .widget-title {
-  color: #fff;
+  color: #C8E6C9;
   font-family: "Kaushan Script"
 }
 
