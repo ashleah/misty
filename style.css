@@ -47,6 +47,11 @@ a {
   box-shadow: none;
 }
 
+pre {
+  max-height: 150px;
+  overflow-y:scroll;
+}
+
 .entry-content a,
 .entry-summary a,
 .taxonomy-description a, .logged-in-as a, .comment-content a, .pingback .comment-body > a, .textwidget a, .entry-footer a:hover, .site-info a:hover {
