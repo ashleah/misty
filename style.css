@@ -87,7 +87,7 @@ h6 {
 }
 
 .table-of-content{
-  border-left: 4px solid #616161;
+  border-left: 4px solid #004D40;
   padding-left: 15px;
 }
 
@@ -105,7 +105,7 @@ h6 {
 
 .table-of-content h2,
 .table-of-content h3 {
-  color: #616161;
+  color: #004D40;
   margin-bottom: 10px;
 }
 
