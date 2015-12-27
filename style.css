@@ -331,6 +331,12 @@ body:not(.custom-background-image):after {
 ----------------------------------------*/
 
 /* 5.1 Articles */
+
+body:not(.search-results) article:not(.type-page) .entry-content {
+    float: right;
+    width: 77%;
+}
+
 .entry-title {
   font-family: "Kaushan Script", "Times New Roman", sans-serif;
 }
