@@ -58,7 +58,7 @@ class Follow_Buttons extends WP_Widget {
     }
 
     if ( get_theme_mod('tumblr_profile') != '' ) {
-      echo '<a href="https://www.tumblr.com/c/' . get_theme_mod('tumblr_profile') . '" target="_blank" class="follow tumblr">';
+      echo '<a href="https://www.tumblr.com/' . get_theme_mod('tumblr_profile') . '" target="_blank" class="follow tumblr">';
       echo '<img src="' . get_stylesheet_directory_uri() . '/img/tumblr-icon.png" alt="tumblr icon" class="follow-icon">';
       echo '<span class="follow-name">';
       echo get_theme_mod('tumblr_profile');
