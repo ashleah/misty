@@ -14,6 +14,7 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<?php get_sidebar( 'content-bottom' ); ?>
+			<p class="lead"> Copyright The Misty Teahouse 2016 </p>
 		</footer><!-- .site-footer -->
 	</div><!-- .site-inner -->
 </div><!-- .site -->
