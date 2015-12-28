@@ -133,6 +133,10 @@ ul {
     border-top: 2px solid #EEE;
 }
 
+.pagination {
+    border-top: 2px solid #EEE;
+  }
+
 /*----------------------------------------
  # 2. Colors
 ----------------------------------------*/
