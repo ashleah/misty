@@ -63,6 +63,8 @@ pre {
   box-shadow: none;
 }
 
+/* H-taggar */
+
 h1,
 h2,
 h3,
@@ -84,6 +86,15 @@ h6 {
   text-transform: none;
   letter-spacing: normal;
   color: #757575;
+  font-size: 20px;
+}
+
+.entry-content h5 {
+  font-size: 14px;
+}
+
+.entry-content h6 {
+  font-size: 14px;
 }
 
 .table-of-content{
@@ -145,6 +156,20 @@ ul {
 
 .pagination {
     border-top: 2px solid #EEE;
+  }
+
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    background: #009144;
+}
+
+.comment-reply-link:hover, .comment-reply-link:focus {
+    color: #009144;
+}
+
+.comment-reply-link {
+    border: 1px solid #d1d1d1;
+    border-radius: 2px;
+    color: #009144;
   }
 
 /*----------------------------------------
