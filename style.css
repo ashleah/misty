@@ -75,26 +75,47 @@ h6 {
 }
 
 .entry-content h2 {
-  font-size: 24px;
+  font-size: 26px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .entry-content h3 {
-  font-size: 20px;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .entry-content h4 {
   text-transform: none;
   letter-spacing: normal;
-  color: #757575;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: #212121;
   font-size: 20px;
 }
 
 .entry-content h5 {
-  font-size: 14px;
+  font-size: 18px;
+  color: #424242;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400px;
+  text-rendering: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .entry-content h6 {
   font-size: 14px;
+  color: #616161;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400px;
+  font-style: normal;
+  text-rendering: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .table-of-content{
@@ -140,18 +161,17 @@ ul {
     border-top: 2px solid #EEE;
   }
 
-  .post-navigation div + div {
-    border-top: 2px solid #EEE;
+.post-navigation div + div {
+  border-top: 2px solid #EEE;
 }
 
 .post-navigation .post-title {
     font-family: "Kaushan Script", "Helvetica Neue", sans-serif;
   }
 
-  .post-navigation a:hover .post-title, .post-navigation a:focus .post-title {
-    color: #009144;
-    transition: color .2s ease-in-out;
-
+.post-navigation a:hover .post-title, .post-navigation a:focus .post-title {
+  color: #009144;
+  transition: color .2s ease-in-out;
 }
 
 .pagination {
@@ -420,21 +440,6 @@ body:not(.search-results) article:not(.type-page) .entry-content {
 .entry-content p {
   text-align: justify;
   margin-bottom: 30px;
-}
-
-.entry-content h2 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-}
-
-.entry-content h3 {
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.entry-content h4 {
-  margin-top: 15px;
-  margin-bottom: 10px;
 }
 
 .small-article {
