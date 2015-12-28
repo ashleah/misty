@@ -133,6 +133,16 @@ ul {
     border-top: 2px solid #EEE;
 }
 
+.post-navigation .post-title {
+    font-family: "Kaushan Script", "Helvetica Neue", sans-serif;
+  }
+
+  .post-navigation a:hover .post-title, .post-navigation a:focus .post-title {
+    color: #009144;
+    transition: color .2s ease-in-out;
+
+}
+
 .pagination {
     border-top: 2px solid #EEE;
   }
