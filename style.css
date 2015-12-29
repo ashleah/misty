@@ -325,7 +325,7 @@ body:not(.custom-background-image):after {
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
-  color: #009144;
+  color: #C8E6C9;
 }
 
 /* Dropdown */
