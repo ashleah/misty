@@ -606,3 +606,13 @@ img.responsive-img {
 .follow.tumblr .follow-icon {
   top: 9px;
 }
+
+/* wowhead Tooltip */
+.wowhead-tooltip tbody, 
+.wowhead-tooltip tfoot, 
+.wowhead-tooltip thead {
+  background: transparent;
+}
+
+
+
