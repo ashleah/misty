@@ -467,6 +467,9 @@ body:not(.search-results) article.small-article .entry-content {
     border-top: 2px solid #eee;
 }
 
+hr {
+  height: 1px;
+}
 /* 5.2 Comments */
 
 /* 5.3 Pages */
@@ -608,11 +611,8 @@ img.responsive-img {
 }
 
 /* wowhead Tooltip */
-.wowhead-tooltip tbody, 
-.wowhead-tooltip tfoot, 
+.wowhead-tooltip tbody,
+.wowhead-tooltip tfoot,
 .wowhead-tooltip thead {
   background: transparent;
 }
-
-
-
