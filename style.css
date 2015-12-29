@@ -127,8 +127,9 @@ h6 {
   list-style: none;
 }
 
-.table-of-content ul li {
-  padding-bottom: 10px;
+
+.table-of-content ul ul {
+
 }
 
 .table-of-content ul li a {
@@ -142,6 +143,10 @@ h6 {
 }
 
 ul {
+  list-style-position: inside;
+}
+
+ol {
   list-style-position: inside;
 }
 
