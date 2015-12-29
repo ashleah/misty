@@ -140,6 +140,9 @@ function post_url_contents($url, $fields) {
     return $ret;
 }
 
+define('HEADER_IMAGE_WIDTH', 1920);
+define('HEADER_IMAGE_HEIGHT', 350);
+
 /*----------------------------------------
  # Additional files
 ----------------------------------------*/
