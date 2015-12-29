@@ -197,6 +197,10 @@ button:hover, button:focus, input[type="button"]:hover, input[type="button"]:foc
     color: #009144;
   }
 
+  a:hover, a:focus, a:active {
+    color: #52655A;
+}
+
 /*----------------------------------------
  # 2. Colors
 ----------------------------------------*/
