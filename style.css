@@ -296,6 +296,7 @@ body:not(.custom-background-image):after {
 
 .site-branding .site-title a:hover, .site-branding .site-title a:focus {
   color: #009144;
+  outline: none;
 }
 
 .site-branding .site-description {
