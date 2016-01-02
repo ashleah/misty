@@ -48,6 +48,10 @@ a {
   outline: 0;
 }
 
+a:visited {
+  outline:0;
+}
+
 pre {
   max-height: 150px;
   overflow-y:scroll;
