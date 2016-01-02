@@ -45,6 +45,7 @@ a {
   transition: color .2s ease-in-out;
   color: #009144;
   box-shadow: none;
+  outline: 0;
 }
 
 pre {
