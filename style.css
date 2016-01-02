@@ -204,6 +204,7 @@ button:hover, button:focus, input[type="button"]:hover, input[type="button"]:foc
 
   a:hover, a:focus, a:active {
     color: #52655A;
+    outline: none;
 }
 
 /*----------------------------------------
