@@ -322,9 +322,18 @@ body:not(.custom-background-image):after {
 
 .main-navigation a {
   color: #009144;
+  outline: none;
   font-size: 14px;
   font-weight: 400;
 }
+
+@media all {
+  .main-navigation a:hover, .main-navigation a:focus {
+      color: #009144;
+      outline: none;
+  }
+}
+
 
 .main-navigation li:hover > a,
 .main-navigation li.focus > a {
