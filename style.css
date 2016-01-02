@@ -419,7 +419,8 @@ body:not(.custom-background-image):after {
 
 /* 5.1 Articles */
 
-body:not(.search-results) article:not(.type-page) img.below-entry-meta, body:not(.search-results) article:not(.type-page) figure.below-entry-meta {
+body:not(.search-results) article:not(.type-page) img.below-entry-meta,
+body:not(.search-results) article:not(.type-page) figure.below-entry-meta {
     margin-left: 0;
     max-width: 100%;
 }
@@ -427,6 +428,13 @@ body:not(.search-results) article:not(.type-page) img.below-entry-meta, body:not
 body:not(.search-results) article:not(.type-page) .entry-content {
     float: right;
     width: 77%;
+}
+
+@media screen and (max-width: 56.875em) {
+  body:not(.search-results) article:not(.type-page) .entry-content {
+    float: left;
+    width: 84%;
+  }
 }
 
 .entry-title {
