@@ -48,8 +48,8 @@ a {
   outline: 0;
 }
 
-a:visited {
-  outline:0;
+a:visited a:hover a:active a:focus {
+  outline: 0;
 }
 
 pre {
