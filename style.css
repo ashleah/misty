@@ -157,7 +157,7 @@ ol {
 
 .widget {
   border-top: 0;
-  margin-bottom: 2em;
+  margin-bottom: 0;
 }
 
 .lead {
@@ -252,6 +252,12 @@ body:not(.custom-background-image):after {
   }
 }
 
+@media screen and (max-width: 56.875em){
+.site-main > article {
+  padding-top: 30px;
+  }
+}
+
 .content-area {
   background-color: #fff;
   border: 10px solid #EEEEEE;
@@ -316,7 +322,7 @@ body:not(.custom-background-image):after {
 }
 
 .site-header-menu {
-  background: #212121;
+  background: #171717;
   margin: 0;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -349,7 +355,6 @@ body:not(.custom-background-image):after {
   .main-navigation .menu-item-has-children > a:after {
     top: 0.6125em;
   }
-
 }
 
 .main-navigation ul ul:before {
@@ -509,7 +514,7 @@ hr {
 .site-footer {
   padding-right: 6%;
   padding-left: 6%;
-  background-color: #212121;
+  background-color: #171717;
 }
 
 .content-bottom-widgets {
@@ -643,4 +648,11 @@ img.responsive-img {
 .wowhead-tooltip tfoot,
 .wowhead-tooltip thead {
   background: transparent;
+}
+
+/*Donate*/
+.donate {
+  background-size: contain;
+  text-indent: -9999px;
+  background-image: url('img/donate.png');
 }
