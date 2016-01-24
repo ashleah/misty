@@ -1,15 +1,4 @@
-<?php
-/**
- * The template for displaying the header
- *
- * Displays all of the head element and everything up until the "site-content" div.
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
- */
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -20,13 +9,24 @@
 	<?php endif; ?>
 	<?php wp_head(); ?>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Kaushan+Script' rel='stylesheet' type='text/css'>
-	<?php if ( get_header_image() ) : ?>
+  <?php if ( get_header_image() ) : ?>
     <style type="text/css">
       #masthead {
         background-image: url('<?php header_image(); ?>');
       }
     </style>
   <?php endif; // End header image check. ?>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71746033-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script type="text/javascript" src="//wow.zamimg.com/widgets/power.js"></script><script>var wowhead_tooltips = { "colorlinks": true, "iconizelinks": true, "renamelinks": true }</script>
 </head>
 
 <body <?php body_class(); ?> data-whatinput-formtyping>
