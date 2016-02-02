@@ -281,11 +281,12 @@ body:not(.custom-background-image):after {
   }
 }
 
-@media screen and (min-width: 44.375em){
+@media screen and (max-width: 56.875em){
 .post-thumbnail {
     margin-right: 7.69%;
   }
 }
+
 
 .sidebar {
   color: #C8E6C9;
