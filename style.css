@@ -222,6 +222,10 @@ button:hover, button:focus, input[type="button"]:hover, input[type="button"]:foc
   Secondary (Black): #212121, rgb(33, 33, 33)
 */
 
+.pagination .prev:hover, .pagination .prev:focus, .pagination .next:hover, .pagination .next:focus {
+    background-color: #009144;
+}
+
 /*----------------------------------------
  # 3. Layout
 ----------------------------------------*/
