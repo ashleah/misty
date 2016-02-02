@@ -278,7 +278,7 @@ body:not(.custom-background-image):after {
 }
 
 @media screen and (min-width: 44.375em){
-.entry-header, .post-thumbnail, .entry-content, .entry-summary, .entry-footer, .comments-area, .image-navigation, .post-navigation, .page-header, .page-content, .content-bottom-widgets {
+.post-thumbnail {
     margin-right: 7.69%;
   }
 }
