@@ -10,12 +10,14 @@ function theme_enqueue_styles() {
   $parent_style = 'parent-style';
   wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
   wp_enqueue_style( 'foundation', get_stylesheet_directory_uri() . '/css/foundation.min.css' );
+  wp_enqueue_style( 'chocolatcss', get_stylesheet_directory_uri() . '/css/chocolat.css' );
 
   wp_register_script( 'modernizr', get_stylesheet_directory_uri() . '/js/modernizr-custom.js', array(), null, false );
   wp_register_script( 'what-input', get_stylesheet_directory_uri() . '/js/vendor/what-input.min.js', array(), null, true );
   wp_register_script( 'jQuery', get_stylesheet_directory_uri() . '/js/vendor/jquery.min.js', array(), null, true );
   wp_register_script( 'foundation-js', get_stylesheet_directory_uri() . '/js/foundation.min.js', array(), null, true );
-  wp_register_script( 'app', get_stylesheet_directory_uri() . '/js/app.js', array(), null, true );
+  wp_register_script( 'chocolat-js', get_stylesheet_directory_uri() . '/js/chocolat.min.js', array('jQuery'), null, true );
+  wp_register_script( 'app', get_stylesheet_directory_uri() . '/js/app.js', array('chocolat-js'), null, true );
 
   wp_enqueue_script( 'modernizr' );
 
@@ -153,4 +155,50 @@ function custom_excerpt_length( $length ) {
 	return 120;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+/*----------------------------------------
+ # Short Codes
+----------------------------------------*/
+function lead_short_code($atts, $content = null){
+  return '<p class="lead">' . $content . '</p>';
+}
+
+add_shortcode( 'lead', 'lead_short_code' );
+
+function gallery_chocolat_shortcode( $attr, $content = null ) {
+  $atts = shortcode_atts( array(
+    'images' => '',
+    'title' => '',
+    'size' => 'medium',
+    'columns' => '1'
+  ), $attr, 'ligthbox' );
+
+  $images = $atts['images'];
+
+  if ( ! empty( $images ) ) {
+    $_attachments = get_posts( array( 'include' => $images, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'post__in' ) );
+
+    $attachments = array();
+    foreach ( $_attachments as $key => $val ) {
+      $attachments[$val->ID] = $_attachments[$key];
+    }
+  }
+
+  if ( empty( $attachments ) ) {
+    return '';
+  }
+
+  $output = '<div class="chocolat-parent gallery-columns-' . $atts['columns'] . '" data-chocolat-title="' . $atts['title'] . '">';
+  foreach ( $attachments as $id => $attachment ) {
+    $image_link = wp_get_attachment_url($id);
+                $image_output = wp_get_attachment_image( $id, $atts['size'], false );
+    $alt = get_post_meta($id, '_wp_attachment_image_alt', true);
+    $output .= '<a href="' . $image_link . '" class="chocolat-image thumbnail" title="' . $alt . '">' . $image_output . '</a>';
+  }
+  $output .= '</div>';
+
+  return $output;
+}
+add_shortcode( 'lightbox', 'gallery_chocolat_shortcode' );
+
 ?>
