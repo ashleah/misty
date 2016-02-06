@@ -265,6 +265,16 @@ body:not(.custom-background-image):after {
 .site-main > article {
   padding-top: 30px;
   }
+.post-thumbnail {
+  margin-right: 7.69%;
+  }
+.entry-header {
+  margin-right: 7.69%;
+  }
+.entry-content {
+  margin-right: 7.69%;
+}
+
 }
 
 .content-area {
@@ -281,10 +291,9 @@ body:not(.custom-background-image):after {
   }
 }
 
+
 @media screen and (max-width: 56.875em){
-.post-thumbnail {
-    margin-right: 7.69%;
-  }
+
 }
 
 
