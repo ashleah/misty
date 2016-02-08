@@ -165,6 +165,18 @@ function lead_short_code($atts, $content = null){
 
 add_shortcode( 'lead', 'lead_short_code' );
 
+function tips_short_code($atts, $content = null){
+  return '<div class="tips">' . $content . '</div>';
+}
+
+add_shortcode( 'tips', 'tips_short_code' );
+
+function content_short_code($atts, $content = null){
+  return '<div class="table-of-content">' . $content . '</div>';
+}
+
+add_shortcode( 'content', 'content_short_code' );
+
 function gallery_chocolat_shortcode( $attr, $content = null ) {
   $atts = shortcode_atts( array(
     'images' => '',
