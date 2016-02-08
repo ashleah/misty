@@ -426,9 +426,11 @@ body:not(.custom-background-image):after {
   padding: 12px 16px;
   color: #fff;
   border: 0 none;
+  border-radius: 0px;
   width: 100%;
-  text-align: left;
+  text-align: center;
   background: #009144;
+  font-weight: 800;
 }
 
 @media screen and (max-width: 56.875em) {
