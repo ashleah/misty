@@ -218,16 +218,15 @@ button:hover, button:focus, input[type="button"]:hover, input[type="button"]:foc
   border-style: solid;
   border-width: 2px;
   border-color: #006B2D;
-  background-color: #73BA7E;
   padding: 10px;
   margin-top: 5px;
   margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   text-align: justify;
-  color: #fff;
 }
 
 .tips h2 {
-  color: #fff;
   font-size: 20px;
   margin-bottom: 0px;
 }
