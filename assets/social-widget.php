@@ -34,7 +34,7 @@ class Follow_Buttons extends WP_Widget {
       echo '<a href="http://www.twitch.tv/' . get_theme_mod('twitch_profile') . '" target="_blank" class="follow twitch">';
       echo '<img src="' . get_stylesheet_directory_uri() . '/img/twitch-icon.png" alt="twitch icon" class="follow-icon">';
       echo '<span class="follow-name">';
-      echo get_theme_mod('twitch_profile');
+      echo 'Twitch';
       echo '</span>';
       echo '</a>';
     }
