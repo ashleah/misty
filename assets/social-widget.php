@@ -43,7 +43,7 @@ class Follow_Buttons extends WP_Widget {
       echo '<a href="https://www.youtube.com/c/' . get_theme_mod('youtube_profile') . '" target="_blank" class="follow youtube">';
       echo '<img src="' . get_stylesheet_directory_uri() . '/img/youtube-icon.png" alt="youtube icon" class="follow-icon">';
       echo '<span class="follow-name">';
-      echo get_theme_mod('youtube_profile');
+      echo 'Youtube';
       echo '</span>';
       echo '</a>';
     }
@@ -52,7 +52,7 @@ class Follow_Buttons extends WP_Widget {
       echo '<a href="https://www.twitter.com/' . get_theme_mod('twitter_profile') . '" target="_blank" class="follow twitter">';
       echo '<img src="' . get_stylesheet_directory_uri() . '/img/twitter-logo.png" alt="twitter icon" class="follow-icon">';
       echo '<span class="follow-name">';
-      echo get_theme_mod('twitter_profile');
+      echo 'Twitter';
       echo '</span>';
       echo '</a>';
     }
@@ -61,7 +61,16 @@ class Follow_Buttons extends WP_Widget {
       echo '<a href="https://' . get_theme_mod('tumblr_profile') . '.tumblr.com/" target="_blank" class="follow tumblr">';
       echo '<img src="' . get_stylesheet_directory_uri() . '/img/tumblr-logo.png" alt="tumblr icon" class="follow-icon">';
       echo '<span class="follow-name">';
-      echo get_theme_mod('tumblr_profile');
+      echo 'Tumblr';
+      echo '</span>';
+      echo '</a>';
+    }
+
+    if ( get_theme_mod('patreon_profile') != '' ) {
+      echo '<a href="https://www.patreon.com/' . get_theme_mod('patreon_profile') . '" target="_blank" class="follow tumblr">';
+      echo '<img src="' . get_stylesheet_directory_uri() . '/img/patreon-logo.png" alt="patreon icon" class="follow-icon">';
+      echo '<span class="follow-name">';
+      echo 'Patreon';
       echo '</span>';
       echo '</a>';
     }

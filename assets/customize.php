@@ -42,5 +42,13 @@
     'description' => __( 'Add your tumblr profile to show the follow button for your readers.' ),
   ) );
 
+  $wp_customize->add_setting( 'patreon_profile');
+  $wp_customize->add_control( 'patreon_profile', array(
+    'type' => 'text',
+    'priority' => 40, // Within the section.
+    'section' => 'misty_options', // Required, core or custom.
+    'label' => __( 'Patreon Profile' ),
+    'description' => __( 'Add your patreon profile to show the follow button for your readers.' ),
+  ) );
 
 } add_action('customize_register', 'misty_customize_register'); ?>
