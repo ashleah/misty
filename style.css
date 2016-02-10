@@ -271,6 +271,10 @@ body:not(.custom-background-image):after {
   max-width: 100%;
 }
 
+.site-header {
+  background-position: center;
+}
+
 .site-content {
   max-width: 1115px;
   margin: 0 auto;
